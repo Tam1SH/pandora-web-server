@@ -56,8 +56,7 @@ once_cell = "1.19.0"
 pandora-module-utils = { path = "pandora-module-utils", version = "0.2.0" }
 pandora-module-utils-macros = { path = "pandora-module-utils-macros", version = "0.2.0" }
 percent-encoding = "2.1"
-pingora = "0.3.0"
-pingora-limits = "0.3.0"
+
 response-module = { path = "response-module", version = "0.2.0" }
 rewrite-module = { path = "rewrite-module", version = "0.2.0" }
 serde = { version = "1.0", features = ["derive"] }
@@ -67,6 +66,15 @@ test-log = "=0.2.13"
 tokio = "1"
 upstream-module = { path = "upstream-module", version = "0.2.0" }
 virtual-hosts-module = { path = "virtual-hosts-module", version = "0.2.0" }
+
+# Pingora dependencies
+pingora = "0.6.0"
+pingora-limits = "0.6.0"
+pingora-core = { version = "0.6.0", features = ["openssl", "openssl_derived"] }
+pingora-proxy = "0.6.0"
+pingora-http = "0.6.0"
+pingora-load-balancing = "0.6.0"
+pingora-openssl = "0.6.0"
 
 [workspace.lints.clippy]
 dbg_macro = "warn"

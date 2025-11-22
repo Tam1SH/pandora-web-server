@@ -22,8 +22,14 @@ bytes.workspace = true
 clap.workspace = true
 http.workspace = true
 pandora-module-utils.workspace = true
-pingora.workspace = true
 serde.workspace = true
+
+pingora.workspace = true
+pingora-core.workspace = true
+pingora-proxy.workspace = true
+pingora-load-balancing.workspace = true
+pingora-http.workspace = true
+pingora-openssl.workspace = true
 
 [lints]
 workspace = true
